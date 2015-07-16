@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@android:style/Widget.ActionButton"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+
+        android:id="@+id/hotlist_bell"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:contentDescription="bell"
+        android:gravity="center"
+        android:src="@mipmap/ic_action_cart"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/actionbar_notifcation_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/badge_circle"
+        android:paddingBottom="1dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="99"
+        android:textColor="#ffffffff"
+        android:textSize="9sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

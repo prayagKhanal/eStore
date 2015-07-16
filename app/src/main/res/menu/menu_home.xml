@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Home">
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <!-- Use  app:actionLayout="" instead of  android:actionLayout="" ,
+    else you will receive null pointer exception -->
+
+    <item
+        android:id="@+id/badge"
+        android:icon="@mipmap/ic_action_cart"
+        android:title="cart"
+        app:actionLayout="@layout/cart_notification"
+        app:showAsAction="always">
+
+    </item>
+
+
+</menu>

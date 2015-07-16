@@ -1,0 +1,161 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e8e8"
+    android:fitsSystemWindows="true"
+    tools:context=".Home">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include
+            android:id="@+id/app_bar_home"
+            layout="@layout/app_bar_home" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e8e8e8"
+            android:orientation="vertical">
+
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <LinearLayout
+
+                style="@style/categoryLinearBg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showClothing"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_category_clothing" />
+
+                <TextView
+                    android:id="@+id/cat_new"
+                    style="@style/categoryListTextMargin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clothing" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/categoryLinearBg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToCellPhones"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_category_phones" />
+
+
+                <TextView
+                    android:id="@+id/cat_cell"
+                    style="@style/categoryListTextMargin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cell Phones" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/categoryLinearBg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToPc"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_category_computers" />
+
+
+                <TextView
+                    android:id="@+id/cat_computers"
+                    style="@style/categoryListTextMargin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Computers" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/categoryLinearBg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToAccessories"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_category_vehicles" />
+
+
+                <TextView
+                    android:id="@+id/cat_vehicles"
+                    style="@style/categoryListTextMargin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicles" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/categoryLinearBg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_category_services" />
+
+
+                <TextView
+                    android:id="@+id/cat_services"
+                    style="@style/categoryListTextMargin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Services" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_drawer_header"
+        app:menu="@menu/drawer" />
+
+
+</android.support.v4.widget.DrawerLayout>

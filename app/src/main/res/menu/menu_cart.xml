@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jeenya.jeenyastore.cart.Cart">
+
+    <item
+        android:onClick="goBack"
+        android:id="@+id/action_cartBack"
+        android:icon="@mipmap/ic_action_back"
+        android:orderInCategory="100"
+        android:title="Back"
+        app:showAsAction="always" />
+
+
+</menu>

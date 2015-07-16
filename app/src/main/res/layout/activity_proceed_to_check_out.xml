@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.jeenya.jeenyastore.cart.ProceedToCheckOut">
+
+    <include
+        android:id="@+id/app_bar_checkOut"
+        layout="@layout/app_bar_checkout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="#38474f"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Billing Details"
+            android:textColor="#f8f8f8"
+
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="First Name" />
+
+                <EditText
+                    android:id="@+id/billing_fName"
+                    style="@style/BillingDetailEditTextb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="First Name"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Last Name" />
+
+                <EditText
+                    android:id="@+id/billing_lName"
+                    style="@style/BillingDetailEditTextb"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:hint="Last Name"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Address" />
+
+                <EditText
+                    android:id="@+id/billing_street"
+                    style="@style/BillingDetailEditTextb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Street Address"
+                    android:maxLines="1" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Phone" />
+
+                <EditText
+                    android:id="@+id/billing_phone"
+                    style="@style/BillingDetailEditTextb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone No."
+                    android:inputType="phone"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Order Notes" />
+
+                <EditText
+                    android:id="@+id/billing_notes"
+                    style="@style/BillingDetailEditTextb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="special notes for for delivery..."
+                    android:maxLines="5" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Total (Rs.)"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/billing_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="100"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bill_order_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#f6846a"
+                    android:padding="10dp"
+                    android:text="PLACE ORDER"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

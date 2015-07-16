@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:checked="false"
+            android:icon="@mipmap/ic_action_home"
+            android:onClick="goToHome"
+            android:title="Home" />
+
+        <item
+            android:checked="false"
+            android:icon="@mipmap/ic_action_contact"
+            android:onClick="goToContactUs"
+            android:title="Contact Us" />
+
+        <item
+            android:checked="false"
+            android:icon="@mipmap/ic_action_settings"
+            android:title="Settings" />
+        <item
+            android:checked="false"
+            android:icon="@mipmap/ic_navigation_cart"
+            android:onClick="goToCart"
+            android:title="Cart" />
+
+    </group>
+
+
+</menu>
